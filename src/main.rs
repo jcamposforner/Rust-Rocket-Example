@@ -12,6 +12,7 @@ use routes::user::login;
 mod db;
 mod auth;
 mod routes;
+mod services;
 
 #[get("/sensitive")]
 fn sensitive(_key: Authorization) -> &'static str {
